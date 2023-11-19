@@ -13,7 +13,8 @@
     "lint:fix": "eslint src --fix && npm format",
     "type-check": "tsc --noEmit",
     "check:turbo": "npx turbo lint type-check",
-    "test:e2e": "playwright test",
+    "test": "jest --watch",
+    "test-once": "jest",
     "format": "prettier --write src",
     "up-interactive": "npm up -i",
     "up-latest": "npm up-interactive -L",
@@ -34,10 +35,10 @@
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
     "@commitlint/cz-commitlint": "^18.2.0",
-    "@playwright/test": "^1.39.0",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.2",
     "@types/react": "^18.2.37",
