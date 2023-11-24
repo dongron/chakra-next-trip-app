@@ -76,7 +76,7 @@ const Home = () => {
     >
       <SimpleGrid columns={{ sm: 1, md: 2, xl: 3 }} spacing="40px">
         {trips.trips.map((trip) => (
-          <TripCard key={trip.id} {...trips.trips[0]} />
+          <TripCard key={trip.id} {...trip} />
         ))}
       </SimpleGrid>
     </Flex>
