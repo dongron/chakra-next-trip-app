@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <Flex as="footer" width="full" justifyContent="center">
       <Text fontSize="sm">
-        {new Date().getFullYear()} -{' '}
-        <Link href="https://sznm.dev" isExternal rel="noopener noreferrer">
-          sznm.dev
+        {new Date().getFullYear()}{' '}
+        <Link href="#" isExternal rel="noopener noreferrer">
+          Trip Test App
         </Link>
       </Text>
     </Flex>
